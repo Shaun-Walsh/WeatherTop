@@ -31,7 +31,7 @@ export const reportStore = {
   async deleteReport(id) {
     await db.read();
     const index = db.data.reports.findIndex((report) => report._id === id);
-    db.data.tracks.splice(index, 1);
+    db.data.reports.splice(index, 1);
     await db.write();
   },
 
