@@ -15,9 +15,17 @@ export const stationController = {
     const station = await stationStore.getStationById(request.params.id);
     const newReport = {
       code: request.body.code,
-      temp: request.body.temp,
-      speed: Number(request.body.speed),
-      pressure: request.body.pressure,
+      current: request.body.current,
+      temp: Number(request.body.temp),
+      maxTemp: Number(request.body.maxTemp),
+      minTemp: Number(request.body.minTemp),
+      wind: Number(request.body.wind),
+      windDirection: request.body.windDirection,
+      maxWind: Number(request.body.maxWind),
+      minWind: Number(request.body.minWind),
+      pressure: Number(request.body.pressure),
+      maxPressure: Number(request.body.maxPressure),
+      minPressure: Number(request.body.minPressure),
     };
     console.log(`adding report ${newReport.code}`);
     await reportStore.addReport(station._id, newReport);
