@@ -1,9 +1,13 @@
+{{#each station.reports}}
+{{>bulma-cards/location}}
+  {{/each}}
 <table class="table is-fullwidth">
   <thead>
     <tr>
       <th>Code</th>
       <th>Temperature</th>
       <th>Windspeed</th>
+      <th>Wind Direction</th>
       <th>Pressure</th>
     </tr>
   </thead>
@@ -14,17 +18,25 @@
         {{code}}
       </td>
       <td>
-        {{temp}}
+        {{temp}} &deg;C
       </td>
       <td>
-        {{wind}}
+        {{wind}} KM/H
       </td>
       <td>
-        {{pressure}}
+        {{windDirection}}
+      </td>
+      <td>
+        {{pressure}} HPA
       </td>
       <td>
         <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button">
           {{>icons/delete}}
+        </a>
+      </td>
+       <td>
+        <a href="/station/{{../station._id}}/editreport/{{_id}}" class="button">
+          {{>icons/edit}}
         </a>
       </td>
     </tr>

@@ -1,12 +1,18 @@
 import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
+import { stationAnalytics } from "../utils/station-analytics.js";
 
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    const lowestReport = stationAnalytics.getLowestReport(station);
+    const weatherImage = stationAnalytics.codeToImage(lowestReport.code);
+    console.log(weatherImage);
     const viewData = {
       title: "Station",
       station: station,
+      lowestReport: lowestReport,
+      weatherImage: weatherImage
     };
     response.render("station-view", viewData);
   },
@@ -39,4 +45,5 @@ export const stationController = {
     await reportStore.deleteReport(request.params.reportId);
     response.redirect("/station/" + stationId);
   },
+
 };

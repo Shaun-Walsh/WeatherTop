@@ -6,16 +6,6 @@
       "_id": "5b0706d5-03a4-4ffc-b6be-454b16de9ef4"
     },
     {
-      "title": "tramore",
-      "userid": "de31c23d-e251-4654-9051-4f9f2d8247ee",
-      "_id": "e21c4ae1-4a07-448f-b17c-ad47753d2880"
-    },
-    {
-      "title": "dunmore",
-      "userid": "de31c23d-e251-4654-9051-4f9f2d8247ee",
-      "_id": "d008dcd5-b77a-4ff1-ac2b-b117ed061ee2"
-    },
-    {
       "title": "cappa",
       "userid": "0cbc2a73-2447-4f58-ac6c-b54d929bc4f4",
       "_id": "acd8089f-0373-4c6f-8a38-9a426da10882"
@@ -46,18 +36,11 @@
       "_id": "f911edbf-d5d4-4c0f-bba2-6ee01781c12d"
     },
     {
-      "title": "test",
-      "lat": "1",
-      "long": "2",
+      "title": "Tramore",
+      "lat": "213",
+      "long": "122",
       "userid": "de31c23d-e251-4654-9051-4f9f2d8247ee",
-      "_id": "4ab19057-8bcf-47e8-a4ac-4c9e827b6b98"
-    },
-    {
-      "title": "bunmahon",
-      "lat": "1234",
-      "long": "34324",
-      "userid": "de31c23d-e251-4654-9051-4f9f2d8247ee",
-      "_id": "162d7d30-e7f1-47e8-9937-1917f221ad8d"
+      "_id": "41b7ba28-e929-4a36-9fc6-f8d6dde7dcc4"
     }
   ]
 }

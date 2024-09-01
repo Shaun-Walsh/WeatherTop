@@ -1,0 +1,77 @@
+<div class="columns ">
+  <div class="card ml-4 mr-4 has-background-black">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+            {{>icons/location}}
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">{{station.title}}</p>
+          <p class="subtitle is-6 has-text-white">lat: {{station.lat}}</p>
+          <p class="subtitle is-6 has-text-white">long: {{station.long}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="card ml-4 mr-4 has-background-black">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+          <div class="media-left">
+           <img src={{{weatherImage}}}>
+        </div>
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">{{code}}</p>
+          <p class="title is-4 has-text-white">{{weather}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="card ml-4 mr-4 has-background-black">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+            {{>icons/temp}}
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">Temp </p>
+          <p class="subtitle is-6 has-text-white">{{temp}}&deg;C</p>
+          <p class="subtitle is-6 has-text-white">Max:{{maxTemp}}&deg;C</p>
+          <p class="subtitle is-6 has-text-white">Min:{{minTemp}}&deg;C</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="card ml-4 mr-4 has-background-black">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+            {{>icons/wind}}
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">Wind</p>
+          <p class="subtitle is-6 has-text-white">Wind Speed: {{wind}}KM/H</p>
+          <p class="subtitle is-6 has-text-white">Wind Direction: {{windDirection}}</p>
+          <p class="subtitle is-6 has-text-white">Max: {{maxWind}}KM/H</p>
+          <p class="subtitle is-6 has-text-white">Min: {{maxWind}}KM/H</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="card ml-4 mr-4 has-background-black">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+            {{>icons/pressure}}
+        </div>
+        <div class="media-content">
+          <p class="title is-4 has-text-white">Pressure </p>
+          <p class="subtitle is-6 has-text-white">{{pressure}} HPA</p>
+          <p class="subtitle is-6 has-text-white">Max: {{maxPressure}} HPA</p>
+          <p class="subtitle is-6 has-text-white">Min: {{minPressure}} HPA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

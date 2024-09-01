@@ -1,0 +1,43 @@
+{{> menu}}
+
+<form class="box" action="/station/{{station._id}}/addreport" method="POST">
+  <label>Enter Report Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="text" placeholder="Weather Code" name="code">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Temp C" name="temp">
+      </div>
+       <div class="field">
+        <input class="input" type="text" placeholder="Max Temp C" name="maxTemp">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Min Temp C" name="minTemp">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Wind Speed Km/H" name="wind">
+      </div>
+      <div class="field">
+        {{>dropdown}}
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Max Wind Speed Km/H" name="maxWind">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Min Wind Speed Km/H" name="minWind">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Pressure hpa" name="pressure">
+      </div>
+      <div class="field">
+        <input class="input" type="text" placeholder="Max Pressure hpa" name="maxPressure">
+      </div>
+       <div class="field">
+        <input class="input" type="text" placeholder="Min Pressure hpa" name="minPressure">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Report</button>
+</form>

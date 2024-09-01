@@ -3,8 +3,14 @@
 <section class="section">
   <div class="title">
     {{station.title}}
-    {{station.lat}}
-    {{station.long}}
+  </div>
+  <div class="subtitle">
+   Lat: {{station.lat}} <br>
+   Long: {{station.long}} <br>
+  </div>
+  <div class="subtitle">
+    Lowest Report: {{lowestReport.code}}
+    Image: {{weatherimage}}
   </div>
   {{> list-reports}}
   {{> add-report}}
